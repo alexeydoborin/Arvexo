@@ -44,6 +44,12 @@ export const ecosystemContent = {
         github: "View on GitHub"
       }
     },
+    ui: {
+      radarHead: "AI effectiveness", radarPeriod: "Q4",
+      radarKpis: [{ label: "Active users", value: "1,284", delta: "+18% QoQ" }, { label: "Hours saved / mo", value: "3,470", delta: "+9%" }, { label: "Adoption ROI", value: "2.4×", delta: "target 2.0×" }],
+      radarTeamsHead: "Adoption by team", radarTeams: [{ name: "Engineering", width: "86%", value: "86%" }, { name: "Support", width: "71%", value: "71%" }, { name: "Analytics", width: "58%", value: "58%" }, { name: "Sales", width: "34%", value: "34%" }],
+      arenaTrack: "Track · AI engineering", arenaMeta: "Task 07 / 12", arenaTaskTitle: "Evaluate model answers without a reference dataset", arenaTaskText: "Define your grading criteria, apply them to 50 answers and explain where your method disagrees with expert judgement.", arenaTags: ["Evaluation", "Data handling", "Reasoning"], arenaProgressLabel: "Track progress", arenaProgressValue: "64%", arenaStats: [{ label: "Participants", value: "312" }, { label: "Submissions", value: "1,940" }, { label: "Reviews", value: "48" }]
+    },
     capabilities: {
       label: "Beyond products",
       researchTitle: "Independent research",
@@ -110,6 +116,12 @@ export const ecosystemContent = {
         cta: "Открыть AI Arena",
         github: "Код на GitHub"
       }
+    },
+    ui: {
+      radarHead: "Эффективность AI", radarPeriod: "IV квартал",
+      radarKpis: [{ label: "Активных пользователей", value: "1 284", delta: "+18% к кв." }, { label: "Сэкономлено часов / мес.", value: "3 470", delta: "+9%" }, { label: "ROI внедрения", value: "2,4×", delta: "цель 2,0×" }],
+      radarTeamsHead: "Внедрение по командам", radarTeams: [{ name: "Разработка", width: "86%", value: "86%" }, { name: "Поддержка", width: "71%", value: "71%" }, { name: "Аналитика", width: "58%", value: "58%" }, { name: "Продажи", width: "34%", value: "34%" }],
+      arenaTrack: "Трек · AI-инженерия", arenaMeta: "Задача 07 / 12", arenaTaskTitle: "Оценить качество ответов модели без эталонных данных", arenaTaskText: "Соберите критерии оценки, проверьте их на 50 ответах и объясните, где ваш метод расходится с мнением экспертов.", arenaTags: ["Оценка качества", "Работа с данными", "Аргументация"], arenaProgressLabel: "Прогресс трека", arenaProgressValue: "64%", arenaStats: [{ label: "Участников", value: "312" }, { label: "Решений", value: "1 940" }, { label: "Разборов", value: "48" }]
     },
     capabilities: {
       label: "За пределами продуктов",

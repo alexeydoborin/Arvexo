@@ -111,10 +111,12 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             ym(111891901, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
           `}
         </Script>
-        <noscript>
-          <div>
-            <img src="https://mc.yandex.ru/watch/111891901" style={{ position: "absolute", left: "-9999px" }} alt="" />
-          </div>
+          <noscript>
+            <div>
+              {/* Tracking pixel must remain a plain image so it works without JavaScript. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://mc.yandex.ru/watch/111891901" style={{ position: "absolute", left: "-9999px" }} alt="" />
+            </div>
         </noscript>
       </body>
     </html>

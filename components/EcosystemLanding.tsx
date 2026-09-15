@@ -58,7 +58,6 @@ function EcosystemLandingInner({ defaultLang }: { defaultLang: EcosystemLocale }
 
       <div id="main">
         <section className="eco-hero">
-          <div className="eco-orbit" aria-hidden="true"><i /><i /><i /></div>
           <h1>{c.hero.title}</h1>
           <div className="eco-hero-bottom">
             <p>{c.hero.lead}</p>
@@ -85,6 +84,7 @@ function EcosystemLandingInner({ defaultLang }: { defaultLang: EcosystemLocale }
             href={localize("/radar", locale)}
             githubHref={github.radar}
             visual="radar"
+            ui={c.ui}
           />
           <ProjectCard
             className="eco-project-arena"
@@ -92,6 +92,7 @@ function EcosystemLandingInner({ defaultLang }: { defaultLang: EcosystemLocale }
             href={localize("/ai-arena", locale)}
             githubHref={github.arena}
             visual="arena"
+            ui={c.ui}
           />
         </section>
 
@@ -120,13 +121,26 @@ function EcosystemLandingInner({ defaultLang }: { defaultLang: EcosystemLocale }
 }
 
 type ProjectCopy = (typeof ecosystemContent)["en"]["projects"]["radar"] | (typeof ecosystemContent)["en"]["projects"]["arena"] | (typeof ecosystemContent)["ru"]["projects"]["radar"] | (typeof ecosystemContent)["ru"]["projects"]["arena"];
+type UiCopy = (typeof ecosystemContent)[EcosystemLocale]["ui"];
 
-function ProjectCard({ className, githubHref, href, project, visual }: { className: string; githubHref: string; href: string; project: ProjectCopy; visual: "radar" | "arena" }) {
+function ProjectCard({ className, githubHref, href, project, visual, ui }: { className: string; githubHref: string; href: string; project: ProjectCopy; visual: "radar" | "arena"; ui: UiCopy }) {
+  const visualContent = visual === "radar" ? (
+    <>
+      <div className="eco-ui-top"><span>{ui.radarHead}</span><span>{ui.radarPeriod}</span></div>
+      <div className="eco-radar-kpis">{ui.radarKpis.map((kpi) => <div key={kpi.label}><span>{kpi.label}</span><strong>{kpi.value}</strong><small>{kpi.delta}</small></div>)}</div>
+      <div className="eco-radar-teams"><p>{ui.radarTeamsHead}</p>{ui.radarTeams.map((team) => <div className="eco-radar-team" key={team.name}><span>{team.name}</span><i><b style={{ width: team.width }} /></i><small>{team.value}</small></div>)}</div>
+    </>
+  ) : (
+    <>
+      <div className="eco-ui-top"><span className="eco-arena-track">{ui.arenaTrack}</span><span>{ui.arenaMeta}</span></div>
+      <div className="eco-arena-task"><h4>{ui.arenaTaskTitle}</h4><p>{ui.arenaTaskText}</p><div className="eco-arena-tags">{ui.arenaTags.map((tag) => <span key={tag}>{tag}</span>)}</div><div className="eco-arena-progress"><div><span>{ui.arenaProgressLabel}</span><span>{ui.arenaProgressValue}</span></div><i><b /></i></div></div>
+      <div className="eco-arena-stats">{ui.arenaStats.map((stat) => <div key={stat.label}><span>{stat.label}</span><strong>{stat.value}</strong></div>)}</div>
+    </>
+  );
+
   return (
     <article className={`eco-project ${className}`}>
-      <div className={`eco-project-visual eco-visual-${visual}`} aria-hidden="true">
-        {visual === "radar" ? <><i /><i /><i /><b /></> : <><b>AI</b><span>01</span><span>02</span><span>03</span></>}
-      </div>
+      <div className={`eco-project-visual eco-visual-${visual}`}>{visualContent}</div>
       <div className="eco-project-copy">
         <p className="eco-project-index">{project.index}</p><h3>{project.title}</h3><p>{project.description}</p>
         <ul>{project.points.map((point) => <li key={point}>{point}</li>)}</ul>

@@ -1785,25 +1785,20 @@ select:focus-visible {
 .eco-button-quiet { background: rgba(255,255,255,.5); color: var(--eco-ink); }
 .eco-button-light { border-color: white; background: white; color: var(--eco-ink); }
 
-.eco-orbit { position: absolute; right: -70px; top: 50px; width: min(42vw, 590px); aspect-ratio: 1; opacity: .6; }
-.eco-orbit i { position: absolute; inset: 0; border: 1px solid rgba(33,84,216,.18); border-radius: 50%; }
-.eco-orbit i:nth-child(2) { inset: 17%; }
-.eco-orbit i:nth-child(3) { inset: 35%; background: radial-gradient(circle, rgba(33,84,216,.18), transparent 65%); }
-
 .eco-thesis,
 .eco-projects,
 .eco-capabilities,
 .eco-founder { width: min(calc(100% - 64px), 1440px); margin: 0 auto; }
-.eco-thesis { display: grid; grid-template-columns: 1fr 3fr; gap: 40px; padding: 132px 0; border-top: 1px solid var(--eco-line); }
-.eco-thesis > div { display: grid; grid-template-columns: 2fr 1fr; gap: 56px; align-items: end; }
-.eco-thesis h2 { max-width: 780px; margin: 0; font-size: clamp(2.5rem, 4.2vw, 5rem); line-height: 1; letter-spacing: -.05em; }
-.eco-thesis div p { margin: 0; color: var(--eco-muted); font-size: .98rem; line-height: 1.65; }
+.eco-thesis { display: grid; grid-template-columns: 1fr; gap: 26px; padding: 132px 0; border-top: 1px solid var(--eco-line); }
+.eco-thesis > div { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: end; }
+.eco-thesis h2 { max-width: 15em; margin: 0; font-size: clamp(2.2rem, 4.2vw, 4.4rem); line-height: 1.04; letter-spacing: -.05em; }
+.eco-thesis div p { max-width: 38em; margin: 0; color: #45515e; font-size: 1.12rem; line-height: 1.7; text-wrap: pretty; }
 
 .eco-projects { padding: 130px 0; }
-.eco-section-head { display: grid; grid-template-columns: 1fr 3fr; gap: 40px; margin-bottom: 66px; }
-.eco-section-head > div { display: grid; grid-template-columns: 2fr 1fr; gap: 56px; align-items: end; }
+.eco-section-head { display: grid; grid-template-columns: 1fr; gap: 26px; margin-bottom: 66px; }
+.eco-section-head > div { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: end; }
 .eco-section-head h2 { margin: 0; font-size: clamp(3rem, 5vw, 5.8rem); line-height: .95; letter-spacing: -.06em; }
-.eco-section-head div p { margin: 0; color: var(--eco-muted); line-height: 1.65; }
+.eco-section-head div p { max-width: 38em; margin: 0; color: #45515e; font-size: 1.12rem; line-height: 1.7; text-wrap: pretty; }
 
 .eco-project { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(340px, .75fr); min-height: 610px; margin-top: 22px; border: 1px solid var(--eco-line); background: rgba(255,255,255,.46); }
 .eco-project-arena { grid-template-columns: minmax(340px, .75fr) minmax(0, 1.25fr); }
@@ -1811,36 +1806,35 @@ select:focus-visible {
 .eco-project-copy { display: flex; flex-direction: column; padding: clamp(36px, 5vw, 74px); }
 .eco-project-index { margin: 0 0 auto !important; font-family: var(--font-mono, ui-monospace), monospace; font-size: .7rem !important; letter-spacing: .1em; text-transform: uppercase; }
 .eco-project-copy h3 { margin: 80px 0 24px; font-size: clamp(2.6rem, 4vw, 5rem); line-height: .92; letter-spacing: -.055em; }
-.eco-project-copy > p { max-width: 610px; margin: 0; color: var(--eco-muted); font-size: 1.02rem; line-height: 1.65; }
+.eco-project-copy > p { max-width: 34em; margin: 0; color: #45515e; font-size: 1.1rem; line-height: 1.7; text-wrap: pretty; }
 .eco-project-copy ul { display: grid; gap: 0; margin: 34px 0 48px; padding: 0; list-style: none; }
-.eco-project-copy li { border-top: 1px solid var(--eco-line); padding: 12px 0; color: #46525f; font-size: .85rem; }
+.eco-project-copy li { border-top: 1px solid var(--eco-line); padding: 12px 0; color: #46525f; font-size: .9rem; }
 .eco-project-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: auto; align-items: center; }
 .eco-project-links a:first-child { display: inline-flex; align-items: center; gap: 16px; font-weight: 700; color: var(--eco-blue); }
 .eco-project-links a:last-child { color: var(--eco-muted); font-size: .8rem; text-decoration: underline; text-underline-offset: 4px; }
 
-.eco-project-visual { position: relative; min-height: 520px; overflow: hidden; background: #0f1824; }
-.eco-visual-radar { background: radial-gradient(circle at 50% 50%, #183a8e 0, #101b2b 36%, #0b121c 72%); }
-.eco-visual-radar i { position: absolute; inset: 12%; border: 1px solid rgba(131,167,255,.34); border-radius: 50%; }
-.eco-visual-radar i:nth-child(2) { inset: 27%; }
-.eco-visual-radar i:nth-child(3) { inset: 42%; }
-.eco-visual-radar::before,
-.eco-visual-radar::after { content: ""; position: absolute; background: rgba(131,167,255,.24); }
-.eco-visual-radar::before { left: 50%; top: 7%; width: 1px; height: 86%; }
-.eco-visual-radar::after { top: 50%; left: 7%; height: 1px; width: 86%; }
-.eco-visual-radar b { position: absolute; top: 32%; left: 62%; width: 10px; height: 10px; border: 2px solid #9ab7ff; border-radius: 50%; box-shadow: 0 0 24px #5f8dff; }
-.eco-visual-arena { display: grid; grid-template-columns: repeat(3, 1fr); align-items: end; gap: 1px; padding: 9%; background: #dce4f6; }
-.eco-visual-arena::before { content: ""; position: absolute; inset: 9%; border: 1px solid rgba(17,24,32,.16); background: repeating-linear-gradient(0deg, transparent 0 70px, rgba(17,24,32,.08) 71px); }
-.eco-visual-arena b { position: absolute; z-index: 2; top: 14%; left: 14%; font-size: clamp(5rem, 12vw, 11rem); line-height: .8; letter-spacing: -.1em; color: #1646bc; }
-.eco-visual-arena span { position: relative; z-index: 2; display: grid; height: 22%; place-items: end start; border-left: 1px solid rgba(17,24,32,.25); padding: 12px; font-family: var(--font-mono, ui-monospace), monospace; font-size: .74rem; }
-.eco-visual-arena span:nth-of-type(2) { height: 42%; }
-.eco-visual-arena span:nth-of-type(3) { height: 68%; background: #2154d8; color: white; }
+.eco-project-visual { display: flex; flex-direction: column; justify-content: center; gap: 18px; overflow: hidden; padding: clamp(26px, 3.4vw, 44px); }
+.eco-visual-radar { background: #111a25; color: #fff; }
+.eco-visual-arena { background: #dce4f6; color: #111820; }
+.eco-ui-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid currentColor; color: inherit; font-family: var(--font-mono, ui-monospace), monospace; font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; opacity: .5; }
+.eco-radar-kpis, .eco-arena-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.14); }
+.eco-radar-kpis > div { display: grid; gap: 9px; background: #111a25; padding: 16px; }
+.eco-radar-kpis span, .eco-radar-kpis small { color: rgba(255,255,255,.55); font-size: .7rem; }
+.eco-radar-kpis strong { font-size: clamp(1.5rem, 2.4vw, 2.1rem); font-weight: 500; letter-spacing: -.04em; }
+.eco-radar-kpis small, .eco-radar-teams small { color: #9ab7ff; font-family: var(--font-mono, ui-monospace), monospace; font-size: .68rem; }
+.eco-radar-teams { display: grid; gap: 14px; border: 1px solid rgba(255,255,255,.14); padding: 20px 18px; }
+.eco-radar-teams > p { margin: 0; color: rgba(255,255,255,.5); font-family: var(--font-mono, ui-monospace), monospace; font-size: .64rem; letter-spacing: .14em; text-transform: uppercase; }
+.eco-radar-team { display: grid; grid-template-columns: minmax(80px, 1fr) minmax(0, 2.4fr) auto; align-items: center; gap: 14px; }
+.eco-radar-team > span { color: rgba(255,255,255,.85); font-size: .82rem; }.eco-radar-team > i, .eco-arena-progress i { display: block; height: 6px; background: rgba(255,255,255,.12); }.eco-radar-team b { display: block; height: 100%; background: #5f8dff; }
+.eco-arena-track { border-radius: 999px; background: #2154d8; padding: 5px 12px; color: #fff; opacity: 1; }.eco-arena-task { display: grid; gap: 14px; border: 1px solid rgba(17,24,32,.14); background: #fff; padding: clamp(22px, 2.6vw, 30px); }.eco-arena-task h4 { margin: 0; font-size: clamp(1.3rem, 2.2vw, 1.8rem); font-weight: 500; line-height: 1.12; letter-spacing: -.03em; }.eco-arena-task p { max-width: 34em; margin: 0; color: #46525f; font-size: .92rem; line-height: 1.6; text-wrap: pretty; }.eco-arena-tags { display: flex; flex-wrap: wrap; gap: 8px; }.eco-arena-tags span { border: 1px solid rgba(17,24,32,.16); border-radius: 999px; padding: 5px 11px; color: #3d4954; font-size: .74rem; }.eco-arena-progress { display: grid; gap: 10px; border-top: 1px solid rgba(17,24,32,.12); padding-top: 18px; }.eco-arena-progress > div { display: flex; justify-content: space-between; gap: 12px; color: #4c5864; font-family: var(--font-mono, ui-monospace), monospace; font-size: .7rem; }.eco-arena-progress i { background: rgba(17,24,32,.12); }.eco-arena-progress b { display: block; width: 64%; height: 100%; background: #2154d8; }
+.eco-arena-stats { border-color: rgba(17,24,32,.14); background: rgba(17,24,32,.14); }.eco-arena-stats > div { display: grid; gap: 6px; background: #eef1f5; padding: 14px 15px; }.eco-arena-stats span { color: #707c88; font-family: var(--font-mono, ui-monospace), monospace; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; }.eco-arena-stats strong { color: #111820; font-size: 1.12rem; font-weight: 500; }
 
 .eco-capabilities { padding: 130px 0; border-top: 1px solid var(--eco-line); }
 .eco-capability-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 50px; background: var(--eco-line); border: 1px solid var(--eco-line); }
 .eco-capability-grid article { display: grid; min-height: 480px; grid-template-rows: auto auto 1fr auto; background: var(--eco-bg); padding: clamp(32px, 4.5vw, 66px); }
 .eco-capability-grid article > span { width: 40px; height: 40px; border: 1px solid var(--eco-line); border-radius: 50%; display: grid; place-items: center; color: var(--eco-blue); font-family: var(--font-mono, ui-monospace), monospace; }
 .eco-capability-grid h2 { margin: 90px 0 20px; font-size: clamp(2.3rem, 3.6vw, 4rem); letter-spacing: -.05em; }
-.eco-capability-grid p { max-width: 520px; margin: 0; color: var(--eco-muted); line-height: 1.65; }
+.eco-capability-grid p { max-width: 33em; margin: 0; color: #45515e; font-size: 1.1rem; line-height: 1.7; text-wrap: pretty; }
 .eco-capability-grid small {
   align-self: end;
   color: var(--eco-blue);
@@ -1859,7 +1853,7 @@ select:focus-visible {
 
 .eco-closing { padding: 132px max(32px, calc((100vw - 1440px) / 2)); background: #111a25; color: white; }
 .eco-closing h2 { max-width: 1000px; margin: 0; font-size: clamp(3rem, 6vw, 7rem); line-height: .94; letter-spacing: -.065em; }
-.eco-closing p { max-width: 600px; margin: 34px 0; color: rgba(255,255,255,.58); font-size: 1.05rem; line-height: 1.6; }
+.eco-closing p { max-width: 36em; margin: 34px 0; color: rgba(255,255,255,.72); font-size: 1.18rem; line-height: 1.6; text-wrap: pretty; }
 .eco-footer { display: grid; grid-template-columns: 1.1fr 1fr 1.2fr auto; align-items: center; gap: 28px; padding: 40px max(32px, calc((100vw - 1440px) / 2)); background: #0c131c; color: rgba(255,255,255,.55); font-size: .77rem; }
 .eco-footer .site-logo-mark,
 .eco-footer .site-logo-wordmark { filter: brightness(0) invert(1); }
@@ -1911,12 +1905,10 @@ select:focus-visible {
   .eco-hero h1 { margin: 0 0 48px; font-size: clamp(2.75rem, 7.6vw, 4rem); line-height: 1.02; letter-spacing: -.045em; font-weight: 500; }
   .eco-hero-bottom, .eco-thesis, .eco-thesis > div, .eco-section-head, .eco-section-head > div { grid-template-columns: 1fr; }
   .eco-hero-bottom { gap: 28px; }
-  .eco-orbit { right: -130px; top: 100px; width: 450px; }
   .eco-thesis, .eco-projects, .eco-capabilities { padding: 90px 0; }
   .eco-thesis > div, .eco-section-head > div { gap: 30px; }
   .eco-project, .eco-project-arena { grid-template-columns: 1fr; min-height: 0; }
   .eco-project-arena .eco-project-visual { order: 0; }
-  .eco-project-visual { min-height: 420px; }
   .eco-project-copy { min-height: 520px; }
   .eco-capability-grid { grid-template-columns: 1fr; }
   .eco-capability-grid article { min-height: 390px; }
@@ -1938,7 +1930,6 @@ select:focus-visible {
 @media (max-width: 560px) {
   .eco-buttons { flex-direction: column; align-items: stretch; }
   .ecosystem-v2 .eco-button, .focus-page .eco-button { width: 100%; }
-  .eco-project-visual { min-height: 330px; }
   .eco-project-copy { min-height: 0; padding: 30px 24px 40px; }
   .eco-project-copy h3 { margin-top: 70px; }
   .eco-founder-mark { width: 108px; }
