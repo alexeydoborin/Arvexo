@@ -6,6 +6,7 @@ export const SITE_NAME = "Arvexo";
 export const SITE_TITLE = "Arvexo — AI Products, Research and Consulting";
 export const SITE_DESCRIPTION = "Arvexo builds Arvexo Radar and Arvexo AI Arena, conducts independent AI research and helps teams create effective AI systems.";
 export const SEO_IMAGE = "/images/arvexo-og.png";
+export const SITE_ICON = "/icon.png?v=20260917";
 export const LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
 
 export const routePaths = [
@@ -97,6 +98,6 @@ export function createPageMetadata(path: BaseRoutePath, locale: Locale): Metadat
 }
 
 export const structuredData = [
-  { "@context": "https://schema.org", "@type": "Organization", "@id": `${absoluteUrl("/")}#organization`, name: SITE_NAME, url: SITE_URL, logo: absoluteUrl("/icon.png"), sameAs: ["https://t.me/arvexoai", "https://github.com/Pobedych/Arvexo-Radar", "https://github.com/Pobedych/Arvexo-AI-Arena"], email: "arvexoai@gmail.com", founder: { "@type": "Person", "@id": `${absoluteUrl("/founder")}#person`, name: "Alexey Doborin", alternateName: "Алексей Доборин", url: absoluteUrl("/founder"), sameAs: ["https://github.com/Pobedych", "https://profi.ru/profile/DoborinAA/", "https://52.basketball/comps/player/?compId=60094&id=360793&tab=0"] } },
+  { "@context": "https://schema.org", "@type": "Organization", "@id": `${absoluteUrl("/")}#organization`, name: SITE_NAME, url: SITE_URL, logo: absoluteUrl(SITE_ICON), sameAs: ["https://t.me/arvexoai", "https://github.com/Pobedych/Arvexo-Radar", "https://github.com/Pobedych/Arvexo-AI-Arena"], email: "arvexoai@gmail.com", founder: { "@type": "Person", "@id": `${absoluteUrl("/founder")}#person`, name: "Alexey Doborin", alternateName: "Алексей Доборин", url: absoluteUrl("/founder"), sameAs: ["https://github.com/Pobedych", "https://profi.ru/profile/DoborinAA/", "https://52.basketball/comps/player/?compId=60094&id=360793&tab=0"] } },
   { "@context": "https://schema.org", "@type": "WebSite", name: SITE_NAME, url: SITE_URL, inLanguage: ["en", "ru"] }
 ];

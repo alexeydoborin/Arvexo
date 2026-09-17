@@ -60,8 +60,10 @@ export const metadata: Metadata = {
     images: [SEO_IMAGE]
   },
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
+    // Keep a versioned URL so browsers that cached the former logo at /icon.png
+    // request the current snowflake icon immediately.
+    icon: "/icon.png?v=20260917",
+    shortcut: "/icon.png?v=20260917",
     apple: "/images/arvexo-apple-icon.png"
   },
   formatDetection: {
