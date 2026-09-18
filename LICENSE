@@ -1,0 +1,42 @@
+Arvexo Proprietary License
+
+Copyright (c) 2026 Alexey Doborin. All rights reserved.
+
+This repository, including its source code, design, text, images, logos,
+trademarks, documentation and any other materials (the "Software"), is the
+exclusive property of Alexey Doborin ("the Owner") and is protected by
+copyright law and international treaties.
+
+1. NO LICENSE GRANTED. No right or license is granted to any person under this
+   document, whether express or implied, except as stated in section 2.
+
+2. VIEWING. You may view the Software in this public repository, and you may
+   fork it on GitHub solely to the extent required by the GitHub Terms of
+   Service. Such viewing and forking do not grant any other right.
+
+3. RESTRICTIONS. Without the prior written permission of the Owner, you may
+   not: (a) copy, reproduce or duplicate the Software or any part of it;
+   (b) modify, adapt, translate or create derivative works; (c) distribute,
+   publish, sublicense, sell, rent, lease or otherwise make the Software
+   available to third parties; (d) use the Software, in whole or in part, for
+   any commercial or non-commercial purpose, including deploying it or running
+   it as a service; (e) use the Software or its contents to train, fine-tune
+   or evaluate machine learning models; (f) remove or alter any copyright,
+   trademark or attribution notice.
+
+4. BRAND. "Arvexo", the Arvexo logo, marks and visual identity are the
+   property of the Owner. No right to use them is granted.
+
+5. THIRD-PARTY COMPONENTS. Open-source dependencies used by the Software remain
+   under their own licenses. This license does not apply to them.
+
+6. TERMINATION. Any use in breach of this license is unauthorized and
+   terminates any permission that may otherwise apply.
+
+7. NO WARRANTY. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+   EVENT SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+For licensing requests contact: arvexoai@gmail.com
