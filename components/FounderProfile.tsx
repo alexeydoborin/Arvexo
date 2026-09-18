@@ -7,7 +7,8 @@ type FounderProfileProps = {
 };
 
 const profiles = {
-  github: "https://github.com/Pobedych",
+  github: "https://github.com/alexeydoborin",
+  x: "https://x.com/alexeydoborin",
   profi: "https://profi.ru/profile/DoborinAA/",
   basketball: "https://52.basketball/comps/player/?compId=60094&id=360793&tab=0"
 } as const;
@@ -30,6 +31,7 @@ const copy = {
     elsewhereLabel: "Где ещё",
     profileLinks: [
       { title: "GitHub", text: "Код, репозитории и проекты Arvexo", href: profiles.github },
+      { title: "X", text: "Заметки об AI и Arvexo", href: profiles.x },
       { title: "Profi.ru", text: "Математика и информатика", href: profiles.profi },
       { title: "Баскетбол", text: "Профиль игрока и турниры", href: profiles.basketball }
     ],
@@ -56,6 +58,7 @@ const copy = {
     elsewhereLabel: "Elsewhere",
     profileLinks: [
       { title: "GitHub", text: "Code, repositories and Arvexo projects", href: profiles.github },
+      { title: "X", text: "Notes on AI and Arvexo", href: profiles.x },
       { title: "Profi.ru", text: "Mathematics and computer science", href: profiles.profi },
       { title: "Basketball", text: "Player profile and competitions", href: profiles.basketball }
     ],

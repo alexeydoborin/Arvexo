@@ -64,5 +64,6 @@ export const chromeContent = {
 export const footerSocials = [
   { label: "Telegram", href: "https://t.me/arvexoai" },
   { label: "Email", href: "mailto:arvexoai@gmail.com" },
-  { label: "GitHub", href: "https://github.com/Pobedych" }
+  { label: "GitHub", href: "https://github.com/alexeydoborin" },
+  { label: "X", href: "https://x.com/alexeydoborin" }
 ];

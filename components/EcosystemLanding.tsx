@@ -8,8 +8,8 @@ import { LangProvider, useLang } from "@/context/LangContext";
 import { ecosystemContent, type EcosystemLocale } from "@/lib/ecosystem-content";
 
 const github = {
-  radar: "https://github.com/Pobedych/Arvexo-Radar",
-  arena: "https://github.com/Pobedych/Arvexo-AI-Arena"
+  radar: "https://github.com/alexeydoborin/Arvexo-Radar",
+  arena: "https://github.com/alexeydoborin/Arvexo-AI-Arena"
 };
 
 function localize(path: string, locale: EcosystemLocale) {

@@ -8,5 +8,5 @@ export default function ArenaPage() {
     { title: "Learn", text: "Structured AI and mathematics tracks combine theory, tasks and immediate feedback." },
     { title: "Compete", text: "Tournaments and non-standard challenges make progress visible and reveal where deeper learning is needed." },
     { title: "Build evidence", text: "Labs, projects and verified results turn activity into a portfolio of demonstrated skills." }
-  ]} primary={{ label: "Open Arvexo Arena", href: "https://arena.arvexo.ru", external: true }} secondary={{ label: "View repository", href: "https://github.com/Pobedych/Arvexo-AI-Arena", external: true }} closingLabel="Want to bring AI Arena to your students?" closingCta="Discuss collaboration" />;
+  ]} primary={{ label: "Open Arvexo Arena", href: "https://arena.arvexo.ru", external: true }} secondary={{ label: "View repository", href: "https://github.com/alexeydoborin/Arvexo-AI-Arena", external: true }} closingLabel="Want to bring AI Arena to your students?" closingCta="Discuss collaboration" />;
 }

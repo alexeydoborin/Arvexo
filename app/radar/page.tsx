@@ -8,5 +8,5 @@ export default function RadarPage() {
     { title: "Visibility", text: "See adoption patterns and AI-enabled workflows across teams without collecting prompt content." },
     { title: "Business value", text: "Connect usage to TCO, time saved, FTE-equivalent, money saved, ROI and payback." },
     { title: "Knowledge sharing", text: "Help teams discover, review, publish and adopt practices that already work inside the organization." }
-  ]} primary={{ label: "Open Radar", href: "https://radar.arvexo.ru", external: true }} secondary={{ label: "View repository", href: "https://github.com/Pobedych/Arvexo-Radar", external: true }} closingLabel="Want to pilot Radar in your organization?" closingCta="Discuss a pilot" />;
+  ]} primary={{ label: "Open Radar", href: "https://radar.arvexo.ru", external: true }} secondary={{ label: "View repository", href: "https://github.com/alexeydoborin/Arvexo-Radar", external: true }} closingLabel="Want to pilot Radar in your organization?" closingCta="Discuss a pilot" />;
 }

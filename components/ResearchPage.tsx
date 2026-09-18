@@ -91,7 +91,7 @@ export function ResearchPage({ articles, locale }: ResearchPageProps) {
           </div>
         </div>
         <div className="research-actions">
-          <a href="https://github.com/Pobedych" className="arx-primary-cta" target="_blank" rel="noreferrer">
+          <a href="https://github.com/alexeydoborin" className="arx-primary-cta" target="_blank" rel="noreferrer">
             {c.github}<span aria-hidden="true">↗</span>
           </a>
           <Link href={isRu ? "/ru/founder" : "/founder"} className="research-text-link">
