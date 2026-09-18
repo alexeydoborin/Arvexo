@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, languageAlternates, LAST_MODIFIED, localizedPath, sitemapRoutes } from "@/lib/seo";
+import { absoluteUrl, languageAlternates, LAST_MODIFIED, LEGAL_LAST_MODIFIED, legalPaths, localizedPath, sitemapRoutes } from "@/lib/seo";
 import { locales } from "@/lib/i18n";
 import { listPublishedArticles } from "@/lib/research-store";
 
@@ -9,7 +9,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = sitemapRoutes.flatMap((route) =>
     locales.map((locale) => ({
       url: absoluteUrl(localizedPath(route.path, locale)),
-      lastModified: LAST_MODIFIED,
+      lastModified: legalPaths.includes(route.path) ? LEGAL_LAST_MODIFIED : LAST_MODIFIED,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
       alternates: {

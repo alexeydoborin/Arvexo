@@ -7,7 +7,7 @@ const sections = [
   {
     title: "1. Who we are",
     items: [
-      "Arvexo is an early-stage AI ecosystem developing digital products, VPN access, Telegram bots, AI consulting and future ecosystem directions.",
+      "Arvexo is an early-stage AI ecosystem developing digital products, Telegram bots, AI consulting and future ecosystem directions.",
       "This privacy policy describes how Arvexo collects, uses and protects data when you visit the website, request early access, use products or contact support.",
       "We build Arvexo with a privacy-first approach: we collect what is needed, isolate it properly and do not sell personal data."
     ]

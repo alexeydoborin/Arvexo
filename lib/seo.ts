@@ -8,6 +8,8 @@ export const SITE_DESCRIPTION = "Arvexo builds Arvexo Radar and Arvexo AI Arena,
 export const SEO_IMAGE = "/images/arvexo-og.png";
 export const SITE_ICON = "/icon.png?v=20260917";
 export const LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
+export const LEGAL_LAST_MODIFIED = new Date("2026-06-09T00:00:00.000Z");
+export const legalPaths: readonly string[] = ["/offer", "/refund-policy", "/personal-data-consent", "/privacy-policy", "/terms"];
 
 export const routePaths = [
   "/", "/about", "/founder", "/radar", "/ai-arena", "/research", "/consulting",

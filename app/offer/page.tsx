@@ -1,10 +1,7 @@
-import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Public Offer — Arvexo",
-  description: "Arvexo public offer for early access, digital products, subscriptions and AI services."
-};
+export const metadata = createPageMetadata("/offer", "en");
 
 const sections = [
   {
